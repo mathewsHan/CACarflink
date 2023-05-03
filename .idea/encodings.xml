@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-batch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-batch/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-batch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-source/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-source/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-sql" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-sql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-sql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-streaming" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-streaming/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-streaming/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

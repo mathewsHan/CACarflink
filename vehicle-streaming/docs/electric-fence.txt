@@ -1,0 +1,25 @@
+-- 电子围栏分析结果表
+CREATE TABLE IF NOT EXISTS vehicle_networking.electric_fence_result (
+    vin VARCHAR(255) NOT NULL COMMENT '车架号',
+    in_time VARCHAR(25) NOT NULL COMMENT '进电子围栏时间',
+    out_time VARCHAR(25) DEFAULT NULL COMMENT '出电子围栏时间',
+    gps_time TIMESTAMP NOT NULL COMMENT '位置时间',
+    lat DOUBLE NOT NULL COMMENT '位置纬度',
+    lng DOUBLE NOT NULL COMMENT '位置经度',
+    ele_id INT(11) NOT NULL COMMENT '电子围栏ID',
+    ele_name VARCHAR(255) NOT NULL COMMENT '电子围栏名称',
+    address VARCHAR(255) NOT NULL COMMENT '中心点地址',
+    latitude DOUBLE NOT NULL COMMENT '中心点纬度',
+    longitude DOUBLE NOT NULL COMMENT '中心点经度',
+    radius FLOAT NOT NULL COMMENT '电子围栏半径',
+    process_time TIMESTAMP NULL default CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '插入数据的时间',
+    PRIMARY KEY (vin, ele_id, in_time)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='电子围栏';
+
+
+-- 插入更新语句
+INSERT vehicle_networking.electric_fence_result (
+    vin, in_time, out_time, gps_time, lat, lng, ele_id, ele_name, address, latitude, longitude, radius
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+ON DUPLICATE KEY UPDATE
+    out_time = VALUES(out_time), gps_time = VALUES(gps_time), lat = VALUES(lat), lng = VALUES(lng) ;

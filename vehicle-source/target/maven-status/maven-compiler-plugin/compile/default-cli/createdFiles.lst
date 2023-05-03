@@ -1,0 +1,6 @@
+cn\itcast\vehicle\producer\KafkaMsgProducer$MsgProducer.class
+cn\itcast\vehicle\producer\FlinkKafkaWriter$1.class
+cn\itcast\vehicle\producer\KafkaMsgProducer$1.class
+cn\itcast\vehicle\producer\FlinkKafkaWriter.class
+cn\itcast\vehicle\consumer\FlinkKafkaReader.class
+cn\itcast\vehicle\producer\KafkaMsgProducer.class

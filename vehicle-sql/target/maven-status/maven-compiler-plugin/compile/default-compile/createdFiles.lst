@@ -1,0 +1,9 @@
+cn\itcast\flink\cdc\FlinkCDCSQLDemo.class
+cn\itcast\flink\connector\SQLConnectorFileSystemDemo.class
+cn\itcast\flink\connector\SQLConnectorHBaseSinkDemo.class
+cn\itcast\flink\connector\SQLConnectorJdbcSinkDemo.class
+cn\itcast\flink\cdc\FlinkCDDataStreamDemo.class
+cn\itcast\flink\connector\MockUserTrackLog.class
+cn\itcast\flink\connector\SQLConnectorKafkaSourceDemo.class
+cn\itcast\flink\sql\FlinkSQLDemo.class
+cn\itcast\flink\hive\SQLConnectorHiveSourceDemo.class

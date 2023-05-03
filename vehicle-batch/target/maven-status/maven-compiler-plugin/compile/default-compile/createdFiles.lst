@@ -1,0 +1,12 @@
+cn\itcast\vehicle\batch\utils\DateUtil.class
+cn\itcast\vehicle\batch\jdbc\AccuracyJdbcFormat.class
+cn\itcast\vehicle\batch\jdbc\ReportJdbcFormat.class
+cn\itcast\vehicle\batch\task\VehicleDataAccuracyDayTask$1.class
+cn\itcast\vehicle\batch\task\DriveTripReportAnalysisTask.class
+cn\itcast\vehicle\batch\utils\ConfigLoader.class
+cn\itcast\vehicle\batch\task\DriveTripSampleAnalysisTask.class
+cn\itcast\vehicle\batch\task\VehicleDataAccuracyTask$1.class
+cn\itcast\vehicle\batch\task\VehicleDataAccuracyTask.class
+cn\itcast\vehicle\batch\task\DriveTripSampleAnalysisTask$1.class
+cn\itcast\vehicle\batch\task\VehicleDataAccuracyDayTask.class
+cn\itcast\vehicle\batch\task\DriveTripReportAnalysisTask$1.class
