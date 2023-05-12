@@ -40,6 +40,7 @@ public class FlinkKafkaWriter {
 		Properties producerConfig = new Properties() ;
 		producerConfig.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "node1.itcast.cn:9092,node2.itcast.cn:9092,node3.itcast.cn:9092");
 		// 4-3. 创建对象，传递参数
+
 		FlinkKafkaProducer<String> kafkaProducer = new FlinkKafkaProducer<String>(
 			"vehicle-data", serializationSchema, producerConfig, FlinkKafkaProducer.Semantic.EXACTLY_ONCE
 		);

@@ -31,6 +31,7 @@ public class FlinkKafkaReader {
 		props.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "gid-vehicle-1");
 		props.setProperty("flink.partition-discovery.interval-millis", "60000") ;
 		// 2-2. 创建对象，传递参数
+		// Topic: subscribe() Partition:assign()  Offset seek()
 		FlinkKafkaConsumer<String> kafkaConsumer = new FlinkKafkaConsumer<String>(
 			"vehicle-data", new SimpleStringSchema(), props
 		);

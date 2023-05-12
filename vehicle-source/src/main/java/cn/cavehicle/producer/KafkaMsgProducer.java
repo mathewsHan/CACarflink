@@ -45,6 +45,8 @@ public class KafkaMsgProducer {
 				String line;
 				int counter = 1;
 				while ((line = bufferedReader.readLine()) != null){
+					// ProducerRecord(Topic,Value) 所有数据写入一个分区.. ProduceRecord(Topic,Key,Value)- 按照Hash取余
+
 					ProducerRecord<String, String> record = new ProducerRecord<>("vehicle-data", line) ;
 					kafkaProducer.send(record) ;
 
