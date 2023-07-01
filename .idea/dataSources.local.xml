@@ -16,8 +16,9 @@
       </schema-mapping>
     </data-source>
     <data-source name="node1-hive" uuid="e8107a92-9ca4-4833-82fb-f589e9a33234">
-      <database-info product="Apache Hive" version="3.1.2" jdbc-version="3.0" driver-name="" driver-version="" dbms="HIVE" exact-version="3.1.2" exact-driver-version="1.1" />
+      <database-info product="Apache Hive" version="3.1.2" jdbc-version="3.0" driver-name="" driver-version="" dbms="HIVE" exact-version="3.1.2" />
       <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" negative="1" />

@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
+ * 解析json字符串生成对象
  * 解析嵌套JSON格式数据，思路：一层一横解析数据
  *      {}  ->  JSONObject
  *      []  ->  JSONArray

@@ -37,7 +37,7 @@ public class KafkaMsgProducer {
 			BufferedReader bufferedReader = null ;
 			try{
 				// 2. 从文件中一行一行读取数据
-				File file = new File("F:\\狂野大数据3期-车联网项目\\vehicle_day12_20220602\\03_代码及数据\\vehicle-parent\\datas\\sourcedata.txt") ;
+				File file = new File("F:\\sourcedata.txt") ;
 				bufferedReader = new BufferedReader(
 					new InputStreamReader(new FileInputStream(file))
 				);

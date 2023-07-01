@@ -13,5 +13,10 @@ public class KafkaProducerTest {
         KafkaProducer<String,String> producer  = new KafkaProducer<>(props);
 
 
+        // sink算子   writeAsText()  writeAsCsv()  print/printToErr  writeUsingOutputFormat  writeToSocket
+
+
+
+
     }
 }

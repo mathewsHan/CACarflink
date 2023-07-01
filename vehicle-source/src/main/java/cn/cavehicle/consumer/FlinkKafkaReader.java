@@ -12,6 +12,9 @@ import java.util.Properties;
 
 /**
  * Flink 流式计算程序：从Kafka实时消费数据，使用FlinkKafkaConsumer实现
+ * Segment中    log.index.interval.bytes=4096
+ * .log 文件
+ * .index文件  稀疏索引
  */
 public class FlinkKafkaReader {
 
@@ -27,11 +30,14 @@ public class FlinkKafkaReader {
 		// 2. 数据源-source
 		// 2-1. Kafka 生产者属性设置
 		Properties props = new Properties() ;
-		props.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "node1.itcast.cn:9092,node2.itcast.cn:9092,node3.itcast.cn:9092");
+		//props.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "node1.itcast.cn:9092,node2.itcast.cn:9092,node3.itcast.cn:9092");
+		// 增加localhost:9094监听，以读取Docker-kafka容器
+		props.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.88.100:9092");
 		props.setProperty(ConsumerConfig.GROUP_ID_CONFIG, "gid-vehicle-1");
 		props.setProperty("flink.partition-discovery.interval-millis", "60000") ;
 		// 2-2. 创建对象，传递参数
 		// Topic: subscribe() Partition:assign()  Offset seek()
+		// SimpleStringSchema 字符串类型数据消费
 		FlinkKafkaConsumer<String> kafkaConsumer = new FlinkKafkaConsumer<String>(
 			"vehicle-data", new SimpleStringSchema(), props
 		);
